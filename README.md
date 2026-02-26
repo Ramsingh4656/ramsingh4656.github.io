@@ -91,7 +91,7 @@ To run this project locally:
 
 I'm actively seeking internship opportunities and open to collaborations. Feel free to reach out:
 
-- **Email**: ramsingh4656@gmail.com
+- **Email**: ram01singh4656@gmail.com
 - **LinkedIn**: [linkedin.com/in/ram-singh4656](https://linkedin.com/in/ram-singh4656)
 - **GitHub**: [github.com/Ramsingh4656](https://github.com/Ramsingh4656)
 
