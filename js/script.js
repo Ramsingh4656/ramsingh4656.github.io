@@ -444,31 +444,8 @@ class PortfolioApp {
         };
     }
 
-    // ===== OPTIMIZED EVENT HANDLERS =====
-    init() {
-        // Use throttled/debounced handlers for better performance
-        const throttledScroll = this.throttle(this.handleScroll.bind(this), 16); // ~60fps
-        const debouncedResize = this.debounce(this.handleResize.bind(this), 250);
-        
-        this.setupEventListeners(throttledScroll, debouncedResize);
-        this.initScrollReveal();
-        this.initTypingEffect();
-        this.initNavigation();
-        this.initMobileMenu();
-        this.initSmoothScrolling();
-        this.initLazyLoading();
-        this.initContactForm();
-    }
-
-    setupEventListeners(throttledScroll, debouncedResize) {
-        window.addEventListener('scroll', throttledScroll, { passive: true });
-        window.addEventListener('resize', debouncedResize, { passive: true });
-        window.addEventListener('load', this.handleLoad.bind(this));
-        
-        // Keyboard navigation
-        document.addEventListener('keydown', this.handleKeydown.bind(this));
-    }
 }
+
 
 // ===== INITIALIZE APP =====
 document.addEventListener('DOMContentLoaded', () => {
@@ -514,8 +491,3 @@ window.PortfolioUtils = {
         }
     }
 };
-
-// ===== INITIALIZE APP =====
-document.addEventListener('DOMContentLoaded', () => {
-    new PortfolioApp();
-});
